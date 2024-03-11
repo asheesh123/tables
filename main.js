@@ -31,6 +31,15 @@ form.addEventListener("submit", (e) => {
       specific.style.display = "block";
       multi(number, "specific-demo");
     }
+  } else {
+    const all = document.getElementById("all");
+    if (all) {
+      all.style.display = "block";
+    }
+    const specific = document.getElementById("specific");
+    if (specific) {
+      specific.style.display = "none";
+    }
   }
 });
 
