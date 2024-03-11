@@ -1,4 +1,5 @@
 function multi(a, d) {
+  document.getElementById(d).innerHTML = "";
   for (var b = 1; b <= 20; b++) {
     document.getElementById(d).innerHTML +=
       "<tr><td>" +
@@ -11,6 +12,27 @@ function multi(a, d) {
       "</td></tr>";
   }
 }
+
+function handleSubmit(e) {
+  e.preventDefault();
+}
+
+const form = document.getElementById("input-form");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const number = document.getElementById("numberInput")?.value;
+  if (number) {
+    const all = document.getElementById("all");
+    if (all) {
+      all.style.display = "none";
+    }
+    const specific = document.getElementById("specific");
+    if (specific) {
+      specific.style.display = "block";
+      multi(number, "specific-demo");
+    }
+  }
+});
 
 multi(1, "demo1");
 multi(2, "demo2");

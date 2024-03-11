@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <title>Tables</title>
+    <title>Multiplication Tables</title>
     <link rel="stylesheet" href="./styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,15 +27,28 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="jumbotron text-center">
-              <h2 class="display-5">Multiplication Table</h2>
+            <div class="jumbotron">
+              <h6 class="display-5 text-center">Multiplication Table</h6>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section>
-      <div class="container">
+      <form id="input-form" action="" class="container">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Number</label>
+          <input
+            type="number"
+            class="form-control"
+            id="numberInput"
+            placeholder="Enter number"
+          />
+        </div>
+      </form>
+    </section>
+    <section>
+      <div class="container" id="all">
         <div class="row">
           <div class="col-sm-3">
             <div class="multiplication">
@@ -234,6 +247,22 @@
                   <th colspan="3" class="text-center">Multiplication 20</th>
                 </thead>
                 <tbody id="demo20" class="text-center"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container" id="specific" style="display: none">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="multiplication">
+              <table class="table table-bordered">
+                <thead>
+                  <th colspan="3" class="text-center">Multiplication</th>
+                </thead>
+                <tbody id="specific-demo" class="text-center"></tbody>
               </table>
             </div>
           </div>
