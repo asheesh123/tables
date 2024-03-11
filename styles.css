@@ -1,0 +1,26 @@
+*,*::after, *::before {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+html {
+    font-size: 150%;
+}
+.table td {
+    padding: 5px 10px;
+}
+
+.jumbotron {
+    padding: 0.2rem 1.3rem;
+}
+
+hr {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.multiplication {
+    margin-bottom: 50px;
+}
